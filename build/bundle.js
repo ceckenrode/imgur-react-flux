@@ -21461,6 +21461,10 @@
 
 	var _Topic2 = _interopRequireDefault(_Topic);
 
+	var _TopicList = __webpack_require__(261);
+
+	var _TopicList2 = _interopRequireDefault(_TopicList);
+
 	var _ImageDetail = __webpack_require__(270);
 
 	var _ImageDetail2 = _interopRequireDefault(_ImageDetail);
@@ -21474,7 +21478,8 @@
 	    _reactRouter.Route,
 	    { path: '/', component: _Main2.default },
 	    _react2.default.createElement(_reactRouter.Route, { path: 'topics/:id', component: _Topic2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'images/:id', component: _ImageDetail2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: 'images/:id', component: _ImageDetail2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _TopicList2.default })
 	  )
 	);
 
@@ -30373,7 +30378,7 @@
 	  }, {
 	    key: 'image',
 	    value: function image() {
-	      var link = 'http://i.imgur.com/' + this.props.id + 'h.jpg';
+	      var link = 'https://i.imgur.com/' + this.props.id + 'h.jpg';
 	      return _react2.default.createElement('img', { src: link });
 	    }
 	  }, {
@@ -30591,7 +30596,6 @@
 	    key: 'storeChanged',
 	    value: function storeChanged(state) {
 	      this.setState({ image: state.image.image, comments: state.image.comments });
-	      console.log(this.state);
 	    }
 	  }, {
 	    key: 'renderContent',

@@ -32,7 +32,6 @@ export default class ImageDetail extends Component {
   }
   storeChanged(state) {
     this.setState({image: state.image.image, comments: state.image.comments});
-    console.log(this.state)
   }
   renderContent() {
     return (

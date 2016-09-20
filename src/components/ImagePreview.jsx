@@ -25,7 +25,7 @@ export default class ImagePreview extends Component {
     );
   }
   image() {
-    const link = `http://i.imgur.com/${this.props.id}h.jpg`;
+    const link = `https://i.imgur.com/${this.props.id}h.jpg`;
     return (
       <img src={link} />
     );
