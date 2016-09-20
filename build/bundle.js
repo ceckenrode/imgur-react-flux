@@ -30361,7 +30361,7 @@
 	      return _react2.default.createElement(
 	        _reactRouter.Link,
 	        {
-	          to: 'images/' + this.props.id,
+	          to: '/images/' + this.props.id,
 	          className: 'image-preview',
 	          onMouseEnter: this.handleMouseEnter,
 	          onMouseLeave: this.handleMouseLeave },
